@@ -1,7 +1,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-console.log('Hello from JSX...');
+//console.log('Hello from JSX...');
 
 var GroceryItemList = require('./components/GroceryItemList.jsx');
 var GroceryItemStore = require('./stores/GroceryItemStore.jsx');
