@@ -1,34 +1,16 @@
 {
-  "name": "reactfullstack",
-  "version": "1.0.0",
-  "description": "reactfullstack",
-  "main": "index.js",
-  "scripts": {
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "reactfullstack"
-  },
-  "keywords": [
-    "react"
-  ],
-  "author": "voduyanh",
-  "license": "UNLICENSED",
+  "name": "src1",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "body-parser": "^1.15.2",
-    "browser-sync": "^2.14.3",
-    "browserify": "^13.1.0",
-    "express": "^4.14.0",
-	"throat": "^3.0.0",
-    "guid": "0.0.12",
-    "gulp": "^3.9.1",
-    "gulp-live-server": "0.0.30",
-    "jquery": "^3.1.0",
-    "mongoose": "^4.6.0",
-    "react": "^15.3.1",
-    "reactify": "^1.1.1",
-    "skeleton": "^0.1.2",
-    "vinyl-source-stream": "^1.1.0"
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
