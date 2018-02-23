@@ -1,7 +1,7 @@
 {
   "name": "reactfullstack",
   "version": "2.0.0",
-  "description": "",
+  "description": "sample react full-stack",
   "main": "app.js",
   "scripts": {
     "test": "webpack",
@@ -9,7 +9,8 @@
     "build": "webpack -d && copy src\\*.html build\\*.html && webpack-dev-server --content-base src\\ --inline --hot",
     "build:prod": "webpack -d && cp src\\*.html build\\*.html"
   },
-  "author": "duyanh",
+  "author": "anh.voduy",
+  "email": "anh.voduy@harveynash.vn",
   "license": "ISC",
   "dependencies": {
     "babel-core": "^6.25.0",
