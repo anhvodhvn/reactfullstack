@@ -1,6 +1,6 @@
 {
   "name": "reactfullstack",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "sample react full-stack",
   "main": "app.js",
   "scripts": {
