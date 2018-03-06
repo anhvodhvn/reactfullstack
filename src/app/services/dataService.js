@@ -1,5 +1,5 @@
-
-var dataService = {    
+/* using axios */
+var dataService = {
 };
 dataService.hostName = 'http://localhost:3000';
 

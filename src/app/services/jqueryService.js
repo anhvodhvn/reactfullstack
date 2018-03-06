@@ -1,3 +1,4 @@
+/* using jquery */
 var $ = require('jquery');
 
 module.exports = {
@@ -37,7 +38,7 @@ module.exports = {
         return new Promise(function(success, error){
             $.ajax({
                 url:url,
-                type:'DELETE',                
+                type:'DELETE',
                 success: success,
                 error: error
             })
