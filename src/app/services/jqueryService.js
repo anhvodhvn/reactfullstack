@@ -1,5 +1,5 @@
 /* using jquery */
-var $ = require('jquery');
+const $ = require('jquery');
 
 module.exports = {
     get: function(url){
