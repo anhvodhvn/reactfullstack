@@ -1,10 +1,9 @@
-import React from 'react';
 
 var reviewService = function(){
-    this.hostName = 'http://localhost:3000';    
+    this.hostName = 'http://localhost:3000';
 };
 
-reviewService.prototype.createReview = function(data){    
+reviewService.prototype.createReview = function(data){
     var self = this;
     var url = self.hostName + '/api/review/add';
     return fetch(url, {

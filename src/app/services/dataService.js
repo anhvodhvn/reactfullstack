@@ -1,6 +1,9 @@
+/* using axios */
+const config = require('./config/config');
 
-var dataService = {    
+const dataService = {
 };
+
 dataService.hostName = 'http://localhost:3000';
 
 // this is only api supports cors for test request
