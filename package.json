@@ -7,7 +7,7 @@
     "test": "webpack",
     "start": "npm run build",
     "build": "webpack -d && copy src\\*.html build\\*.html && webpack-dev-server --content-base src\\ --inline --hot",
-    "build:prod": "webpack -d && cp src\\*.html build\\*.html"
+    "build:prod": "webpack -d && copy src\\*.html build\\*.html"
   },
   "author": "anh.voduy",
   "email": "anh.voduy@harveynash.vn",
