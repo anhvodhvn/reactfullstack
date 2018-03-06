@@ -1,5 +1,7 @@
 /* using axios */
-var dataService = {
+const config = require('./config/config');
+
+const dataService = {
 };
 dataService.hostName = 'http://localhost:3000';
 
