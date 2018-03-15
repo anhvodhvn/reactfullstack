@@ -8,15 +8,15 @@ var SRC_DIR = path.resolve(__dirname, 'src');
 
 var config = {
     entry: {        
-        index: SRC_DIR + '\\app\\index.js',
-        shop: SRC_DIR + '\\app\\shop.js',
-        cart: SRC_DIR + '\\app\\cart.js',
-        checkout: SRC_DIR + '\\app\\checkout.js',
-        'single-product': SRC_DIR + '\\app\\single-product.js',
-        sample: SRC_DIR + '\\app\\sample.js'
+        index: path.join(SRC_DIR, 'app/index.js'),
+        shop: path.join(SRC_DIR, 'app/shop.js'),
+        cart: path.join(SRC_DIR, 'app/cart.js'),
+        checkout: path.join(SRC_DIR, 'app/checkout.js'),
+        'single-product': path.join(SRC_DIR, 'app/single-product.js'),
+        sample: path.join(SRC_DIR, 'app/sample.js')
     },
     output: {
-        path: BUILD_DIR + '\\app',
+        path: path.join(BUILD_DIR, '/app'),
         filename: '[name].bundle.js',
         publicPath: '/app/'
     },
@@ -45,20 +45,20 @@ var config = {
 		}),
 		new CopyWebpackPlugin([
 			{ 
-				from: path.join(SRC_DIR, '\\css'),
-				to: '..\\css'
+				from: path.join(SRC_DIR, 'css'),
+				to: '../css'
             },
             { 
-				from: path.join(SRC_DIR, '\\fonts'),
-				to: '..\\fonts'
+				from: path.join(SRC_DIR, 'fonts'),
+				to: '../fonts'
             },
             { 
-				from: path.join(SRC_DIR, '\\img'),
-				to: '..\\img'
+				from: path.join(SRC_DIR, 'img'),
+				to: '../img'
             },
             { 
-				from: path.join(SRC_DIR, '\\js'),
-				to: '..\\js'
+				from: path.join(SRC_DIR, 'js'),
+				to: '../js'
             }
 		])
     ]
