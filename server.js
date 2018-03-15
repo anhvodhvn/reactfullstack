@@ -4,7 +4,7 @@ const path = require("path");
 
 // Express
 const server = express();
-server.set('port', process.env.PORT || 3000);
+server.set('port', process.env.PORT || 8080);
 
 const webpath = path.join(__dirname, 'build');
 server.use('/', express.static(webpath, { index: 'index.html' }));
