@@ -5,12 +5,12 @@
 - database: ?
 
 ---------------------------------------------------------------------------------
-react js + webpack + ES 2016
+react js + webpack + ES 6
 - npm install  or  yarn install
 - npm start
 
 
-React's component life cycle
+React's components life cycle:
 - componentWillMount(): immediately before initial rendering
 - componentDidMount(): immediately after initial rendering
 - componentWillReceiveProps(): when component receive new props
