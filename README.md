@@ -10,6 +10,7 @@ react js + webpack + ES 6
 - npm start
 
 
+
 React's components life cycle:
 - componentWillMount(): immediately before initial rendering
 - componentDidMount(): immediately after initial rendering
