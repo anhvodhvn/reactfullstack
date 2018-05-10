@@ -112,11 +112,11 @@ export class SampleHome extends React.Component{
     }
 
     componentDidMount(){
-        console.log('- SampleHome: componentDidMount()');
+        //console.log('- SampleHome: componentDidMount()');
     }
 
     componentWillReceiveProps(nextProps){
-        console.log('- SampleHome: componentWillReceiveProps()', nextProps);
+        //console.log('- SampleHome: componentWillReceiveProps()', nextProps);
     }
     
     /**
@@ -127,10 +127,12 @@ export class SampleHome extends React.Component{
      * @param {*} nextState 
      */
     shouldComponentUpdate(nextProps, nextState){
-        console.log('- SampleHome: shouldComponentUpdate()', nextProps, nextState);
-        // if(nextState.status === 1) 
-        //     return false;
-        return true; //false
+        if(nextProps != nextState){
+            //console.log('- SampleHome: shouldComponentUpdate()', nextProps, nextState);
+            return true;
+        } else {
+            return false;
+        }
     }
 
     /**
@@ -138,16 +140,16 @@ export class SampleHome extends React.Component{
      * @param {*} nextProps 
      * @param {*} nextState 
      */
-    componentWillUpdate(nextProps, nextState){     
-        console.log('- SampleHome: componentWillUpdate()', nextProps, nextState);
+    componentWillUpdate(nextProps, nextState){
+        //console.log('- SampleHome: componentWillUpdate()', nextProps, nextState);
     }
 
     componentDidUpdate(prevProps, prevState){
-        console.log('- SampleHome: componentDidUpdate()');
+        //console.log('- SampleHome: componentDidUpdate()');
     }
 
     componentWillUnMount(){
-        console.log('- SampleHome: componentWillUnMount()');
+        //console.log('- SampleHome: componentWillUnMount()');
     }
 }
 
