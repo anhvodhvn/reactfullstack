@@ -1,6 +1,6 @@
 import React from 'react';
 import moment from 'moment';
-import dataService from './../services/dataService';
+import axiosService from './../services/axiosService';
 
 /**
  * For understand react's component life cycle
@@ -14,6 +14,7 @@ export class SampleHome extends React.Component{
         this.state = {
             date: Date.now(),            
             profile: {},
+            products: [],
             name: this.props.name,
             age: this.props.age,
             homeLink: props.initialHomeLinkName,
@@ -25,9 +26,9 @@ export class SampleHome extends React.Component{
                 status: 1
             });
         }, 5000);
-        console.log('- SampleHome: constructor()');
     }
 
+    /* handle events */
     onMakeOlder() {
         this.setState({
             age: this.state.age + 5
@@ -47,22 +48,23 @@ export class SampleHome extends React.Component{
             homeLink: event.target.value
         })
     }
-    
+
+
+    /* component life cycle */
     componentWillMount() {
-        console.log('- SampleHome: componentWillMount()');
-        var component = this;
-        return dataService.getProfile('/api/myprofile')
-        .then(function(data){
-            component.setState({
-                profile: data
-            });
+        return axiosService.getProducts()
+        .then((res) => {
+            let products = res.PageData;
+            this.setState({products: products});
+        })
+        .catch((err) => {
+            console.log(err);
         });
     }
 
     render(){
-        console.log('- SampleHome: render()');
-        // console.log('- this.state.date:', moment(this.state.date).format('DD-MMM-YYYY'));
-        // console.log('- this.state.profile:', this.state.profile);
+        let { products } = this.props;
+        if(products) console.log('- products:', products);
         return (
             <div>
                 <p>In a new Component!</p>
@@ -150,11 +152,13 @@ export class SampleHome extends React.Component{
 }
 
 
+
 /**
  * For understand react type checking
  * https://facebook.github.io/react/docs/typechecking-with-proptypes.html
  */
 SampleHome.propTypes = {
+    products: React.PropTypes.array,
     name: React.PropTypes.string,
     age: React.PropTypes.number,
     user: React.PropTypes.object,

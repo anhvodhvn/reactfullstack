@@ -1,6 +1,9 @@
-/* using jquery */
-const $ = require('jquery');
+import $ from 'jquery';
+import config from '../config/config';
 
+/**
+ * jqueryService is a service using jquery library to make request to APIs
+ */
 module.exports = {
     get: function(url){
         return new Promise(function(success, error){

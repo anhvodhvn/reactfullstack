@@ -1,5 +1,9 @@
+import config from '../config/config';
 
-var reviewService = function(){
+/**
+ * dataService is a service using default promise library to make request to APIs
+ */
+const reviewService = function(){
     this.hostName = 'http://localhost:3000';
 };
 
