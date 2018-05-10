@@ -5,7 +5,7 @@ import config from '../config/config';
  * axiosService is a factory using axios library to make request to APIs
  */
 const axiosService = function(){
-    console.log('- config:', config);
+    //console.log('- config:', config);
     this.domain = config.domain;
     this.port = config.port;
     this.hostName = this.domain + ':' + this.port;

@@ -3,11 +3,14 @@ import config from '../config/config';
 /**
  * dataService is a service using default promise library to make request to APIs
  */
-const reviewService = function(){
-    this.hostName = 'http://localhost:3000';
+const dataService = function(){
+    //console.log('- config:', config);
+    this.domain = config.domain;
+    this.port = config.port;
+    this.hostName = this.domain + ':' + this.port;
 };
 
-reviewService.prototype.createReview = function(data){
+dataService.prototype.createReview = function(data){
     var self = this;
     var url = self.hostName + '/api/review/add';
     return fetch(url, {
@@ -27,4 +30,4 @@ reviewService.prototype.createReview = function(data){
     });
 }
 
-module.exports = new reviewService;
+module.exports = new dataService();

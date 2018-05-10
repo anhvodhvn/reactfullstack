@@ -55,6 +55,7 @@ export class SampleHome extends React.Component{
         return axiosService.getProducts()
         .then((res) => {
             let products = res.PageData;
+            console.log('- products:', products);
             this.setState({products: products});
         })
         .catch((err) => {
