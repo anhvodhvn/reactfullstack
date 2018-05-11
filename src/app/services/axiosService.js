@@ -35,4 +35,14 @@ axiosService.prototype.getProducts = function(){
     });
 }
 
+axiosService.prototype.getNewFeed = function(){
+    return this.get('/api/newsfeed')
+    .then(function(res) {
+        return res.data;
+    })
+    .catch(function(err){
+        return err;
+    });
+}
+
 module.exports = new axiosService();
