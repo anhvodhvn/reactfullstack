@@ -1,5 +1,4 @@
 import React from 'react';
-import reviewService from './../services/reviewService';
 
 export class ReviewForm extends React.Component {
     constructor(){
@@ -28,17 +27,6 @@ export class ReviewForm extends React.Component {
 
     handleSubmit(event) {        
         event.preventDefault();
-        var self = this;
-        return reviewService.createReview(this.state)
-        .then(function(res){
-            if(res.status) {                
-                console.log('success');
-                self.resetReview();
-            }
-            else {
-                console.log('failed');
-            }
-        });
     }
 
     onChangeName(event){

@@ -1,6 +1,5 @@
 import React from 'react';
 import { ReviewForm } from './ReviewForm';
-import reviewService from './../services/reviewService';
 
 export class ProductContentRightSingle extends React.Component {
     constructor(){

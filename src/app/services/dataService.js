@@ -1,44 +1,33 @@
-/* using axios */
-//const config = require('../config/config');
+import config from '../config/config';
 
-const dataService = {
+/**
+ * dataService is a service using default promise library to make request to APIs
+ */
+const dataService = function(){
+    //console.log('- config:', config);
+    this.domain = config.domain;
+    this.port = config.port;
+    this.hostName = this.domain + ':' + this.port;
 };
 
-dataService.hostName = 'http://localhost:3000';
-
-// this is only api supports cors for test request
-dataService.getProfile = function(url){
-    return fetch(this.hostName + url)
-    .then(function(res) {
-        return res.json();
-    })
-    .catch(function(err){
-        return err;
-    });
-}
-
-// dataService.getMenu = function(url){
-//     return fetch(this.hostName + url)
-//     .then(function(res){
-//         return res.json();
-//     });
-// }
-
-dataService.get = function(url){
-    return fetch(this.hostName + url)
-    .then(function(res){
-        return res.json();
-    });
-}
-
-dataService.post = function(url, data){
-    return fetch(this.hostName + url, {
+dataService.prototype.createReview = function(data){
+    var self = this;
+    var url = self.hostName + '/api/review/add';
+    return fetch(url, {
         method: 'POST',
+        headers: {
+            'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json'
+        },
         body: JSON.stringify(data)
     })
     .then(function(res){
-        return res.json();
+        if(res.status !== 200) throw Error(res.statusText);
+        return { status: true, body: res.body };
+    })
+    .catch(function(error){
+        return { status: false, message: error};
     });
 }
 
-module.exports = dataService;
+module.exports = new dataService();
