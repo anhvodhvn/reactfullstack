@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Optimization;
 
-namespace EmployeeManagement
+namespace eEmployee
 {
     public class BundleConfig
     {

@@ -8,10 +8,10 @@ using Microsoft.Owin.Security.DataProtection;
 using Microsoft.Owin.Security.Google;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
-using EmployeeManagement.Models;
-using EmployeeManagement.Providers;
+using eEmployee.Models;
+using eEmployee.Providers;
 
-namespace EmployeeManagement
+namespace eEmployee
 {
     public partial class Startup
     {

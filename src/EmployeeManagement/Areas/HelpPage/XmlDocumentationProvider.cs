@@ -5,9 +5,9 @@ using System.Reflection;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
 using System.Xml.XPath;
-using EmployeeManagement.Areas.HelpPage.ModelDescriptions;
+using eEmployee.Areas.HelpPage.ModelDescriptions;
 
-namespace EmployeeManagement.Areas.HelpPage
+namespace eEmployee.Areas.HelpPage
 {
     /// <summary>
     /// A custom <see cref="IDocumentationProvider"/> that reads the API documentation from an XML documentation file.

@@ -10,9 +10,9 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
-using EmployeeManagement.Models;
+using eEmployee.Models;
 
-namespace EmployeeManagement
+namespace eEmployee
 {
     public class EmailService : IIdentityMessageService
     {

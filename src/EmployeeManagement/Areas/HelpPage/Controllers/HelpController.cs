@@ -1,10 +1,10 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using EmployeeManagement.Areas.HelpPage.ModelDescriptions;
-using EmployeeManagement.Areas.HelpPage.Models;
+using eEmployee.Areas.HelpPage.ModelDescriptions;
+using eEmployee.Areas.HelpPage.Models;
 
-namespace EmployeeManagement.Areas.HelpPage.Controllers
+namespace eEmployee.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

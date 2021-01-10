@@ -10,9 +10,9 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Owin;
-using EmployeeManagement.Models;
+using eEmployee.Models;
 
-namespace EmployeeManagement.Controllers
+namespace eEmployee.Controllers
 {
     [Authorize]
     public class MeController : ApiController

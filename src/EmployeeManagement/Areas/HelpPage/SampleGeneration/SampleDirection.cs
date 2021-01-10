@@ -1,4 +1,4 @@
-namespace EmployeeManagement.Areas.HelpPage
+namespace eEmployee.Areas.HelpPage
 {
     /// <summary>
     /// Indicates whether the sample is used for request or response

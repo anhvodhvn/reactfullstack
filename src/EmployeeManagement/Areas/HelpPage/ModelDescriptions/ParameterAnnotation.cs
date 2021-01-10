@@ -1,6 +1,6 @@
 using System;
 
-namespace EmployeeManagement.Areas.HelpPage.ModelDescriptions
+namespace eEmployee.Areas.HelpPage.ModelDescriptions
 {
     public class ParameterAnnotation
     {

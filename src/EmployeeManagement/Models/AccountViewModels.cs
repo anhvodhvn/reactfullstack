@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace EmployeeManagement.Models
+namespace eEmployee.Models
 {
     // Models returned by AccountController actions.
     public class ExternalLoginConfirmationViewModel

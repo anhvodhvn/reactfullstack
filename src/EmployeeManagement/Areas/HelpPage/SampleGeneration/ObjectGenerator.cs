@@ -6,7 +6,7 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 
-namespace EmployeeManagement.Areas.HelpPage
+namespace eEmployee.Areas.HelpPage
 {
     /// <summary>
     /// This class will create an object of a given type and populate it with sample data.
@@ -421,7 +421,7 @@ namespace EmployeeManagement.Areas.HelpPage
                     { 
                         typeof(String), index =>
                         {
-                            return String.Format(CultureInfo.CurrentCulture, "sample string {0}", index);
+                            return String.Format(CultureInfo.CurrentCulture, "app-employee sample string {0}", index);
                         }
                     },
                     { 
