@@ -7,21 +7,10 @@
 *.userosscache
 *.sln.docstates
 
-# EmployeeManagement
-EmployeeManagement/bin
-EmployeeManagement/obj
-EmployeeManagement/*.user
+# eEmployee
+eEmployee/bin
+eEmployee/obj
+eEmployee/*.user
 
 # Visual Studio 2019 cache/options directory
 .vs/
-
-# test_console folder: NetCoreSharePoint
-test_console/NetCoreSharePoint/bin
-test_console/NetCoreSharePoint/obj
-test_console/NetCoreSharePoint/*.user
-
-# test_console folder: NetFrameSharePoint
-test_console/NetFrameSharePoint/packages/*
-test_console/NetFrameSharePoint/NetFrameSharePoint/bin
-test_console/NetFrameSharePoint/NetFrameSharePoint/obj
-test_console/NetFrameSharePoint/NetFrameSharePoint/*.user
